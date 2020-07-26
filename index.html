@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
     <!-- Bootstrap CSS -->
     <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     />
     <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     />
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Exchange Calculator</title>
-</head>
+  </head>
 
-<body>
-<nav class="navbar navbar-dark bg-danger">
-    <div class="container justify-content-center">
+  <body>
+    <nav class="navbar navbar-dark bg-danger">
+      <div class="container justify-content-center">
         <a href="" class="navbar-brand">Exchange Calculator</a>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <div class="form-group">
+            <select id="currency_one" class="custom-select">
+              <option>Select Curreny</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="currency_two" class="custom-select">
+              <option>Select Curreny</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input
+              type="number"
+              id="mount"
+              class="form-control"
+              placeholder="Amount"
+            />
+          </div>
+          <button class="btn btn-primary btn-block" id="btn-calculate">
+            Calculate
+          </button>
+          <div class="text-danger text-center mt-3" id="result"></div>
+        </div>
+      </div>
     </div>
-</nav>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
